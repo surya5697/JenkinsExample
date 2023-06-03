@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 2, 2023 10:03:38 AM</span></a>
+<a href="#"><span class="badge badge-primary">Jun 2, 2023 11:10:50 AM</span></a>
 </li>
 </ul>
 </div>
@@ -86,7 +86,7 @@
           <div class="test-detail">
             <p class="name">We can orderToBuy a product by using a limeRoad ecommerce web application</p>
             <p class="text-sm">
-              <span>10:03:43 AM</span> / <span>00:01:02:495</span>
+              <span>11:11:36 AM</span> / <span>00:00:26:133</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -95,9 +95,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">We can orderToBuy a product by using a limeRoad ecommerce web application</h5>
-<span class='badge badge-success'>06.02.2023 10:03:43 AM</span>
-<span class='badge badge-danger'>06.02.2023 10:04:45 AM</span>
-<span class='badge badge-default'>00:01:02:495</span>
+<span class='badge badge-success'>06.02.2023 11:11:36 AM</span>
+<span class='badge badge-danger'>06.02.2023 11:12:03 AM</span>
+<span class='badge badge-default'>00:00:26:133</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -163,15 +163,14 @@
               <div class="step fail-bg" title="com.stepDefinition.StepDefinition.user_click_the_verify_button_and_user_navigate_to_the_home_page()">
                 <span>Then User click the verify button and user navigateTo the home page</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@type="submit"])[2]"}
+        <textarea disabled class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
   (Session info: chrome=114.0.5735.90)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SURYAGOBI', ip: '192.168.159.228', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\krrds\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62406}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5e30dac2e81c66d4f0621a215f204cf2
-*** Element info: {Using=xpath, value=(//input[@type="submit"])[2]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\krrds\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63979}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1f52ac8b3acdc37afec063902eecffc
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -182,12 +181,13 @@ Session ID: 5e30dac2e81c66d4f0621a215f204cf2
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy18.click(Unknown Source)
 	at com.baseClass.BaseClass.click(BaseClass.java:148)
 	at com.stepDefinition.StepDefinition.user_click_the_verify_button_and_user_navigate_to_the_home_page(StepDefinition.java:78)
@@ -202,10 +202,10 @@ Session ID: 5e30dac2e81c66d4f0621a215f204cf2
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="12"><span class="badge log fail-bg mr-2">Fail</span>User wants to buy a jean</div>
+        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>User wants to buy a jean</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_move_to_click_the_jean_product_and_navigate_to_jean_list_field()">
                 <span>When User moveTo click the jean product and navigateTo jean list field</span>
@@ -217,201 +217,14 @@ Session ID: 5e30dac2e81c66d4f0621a215f204cf2
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.user_prefer_to_click_the_jean_size()">
+              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_prefer_to_click_the_jean_size()">
                 <span>And User prefer to click the jean size</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SURYAGOBI', ip: '192.168.159.228', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
-	at java.util.LinkedHashMap$LinkedValues.forEach(Unknown Source)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
-	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
-	at org.openqa.selenium.json.Json.toJson(Json.java:42)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
-	at com.baseClass.BaseClass.actionsMethod(BaseClass.java:307)
-	at com.stepDefinition.StepDefinition.user_prefer_to_click_the_jean_size(StepDefinition.java:103)
-	at ✽.User prefer to click the jean size(file:///C:/Users/krrds/eclipse-workspace/IPT-Cucumber/src/test/java/com/featureFile/limeRoad.feature:20)
-	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SURYAGOBI', ip: '192.168.159.228', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: driver.version: RemoteWebDriver
-		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
-		at org.openqa.selenium.json.Json.toJson(Json.java:44)
-		at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
-		at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
-		at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-		at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-		at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-		at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-		at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
-		at com.baseClass.BaseClass.actionsMethod(BaseClass.java:307)
-		at com.stepDefinition.StepDefinition.user_prefer_to_click_the_jean_size(StepDefinition.java:103)
-		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-		at java.lang.reflect.Method.invoke(Unknown Source)
-		at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-		at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-		at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-		at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-		at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-		at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-		at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-		at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
-		at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
-		at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-		at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
-		at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
-		at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
-		at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
-		at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
-		at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-		at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-		at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-		at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-		at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-		at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-		at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
-		at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
-		at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-		at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-		at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-		at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-		at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-		at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
-		at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-		at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-		at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-		at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
-		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-Caused by: java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
-	at java.util.LinkedHashMap$LinkedValues.forEach(Unknown Source)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
-	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
-	at org.openqa.selenium.json.Json.toJson(Json.java:42)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
-	at com.baseClass.BaseClass.actionsMethod(BaseClass.java:307)
-	at com.stepDefinition.StepDefinition.user_prefer_to_click_the_jean_size(StepDefinition.java:103)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#size_33116320"}
-  (Session info: chrome=114.0.5735.90)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SURYAGOBI', ip: '192.168.159.228', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\krrds\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62406}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5e30dac2e81c66d4f0621a215f204cf2
-*** Element info: {Using=id, value=size_33116320}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
-	... 68 more
-</textarea>
-      
       </div>
               </div>
-              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_wants_to_click_the_jean_add_to_cart_button()">
+              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_wants_to_click_the_jean_add_to_cart_button()">
                 <span>And User wants to click the jean AddToCart button</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
           </div>
@@ -500,7 +313,7 @@ Session ID: 5e30dac2e81c66d4f0621a215f204cf2
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -509,12 +322,12 @@ Session ID: 5e30dac2e81c66d4f0621a215f204cf2
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="name">org.openqa.selenium.StaleElementReferenceException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.NoSuchElementException</h4>
+<h4>org.openqa.selenium.StaleElementReferenceException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -528,47 +341,11 @@ Session ID: 5e30dac2e81c66d4f0621a215f204cf2
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>10:04:00 AM</td>
+<td>11:12:00 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='11'>Then User click the verify button and user navigateTo the home page</a>
 <div class="">
 <span class="badge badge-default">We can orderToBuy a product by using a limeRoad ecommerce web application.User login the account by using the login functionality.Then User click the verify button and user navigateTo the home page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.json.JsonException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.json.JsonException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:04:25 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='15'>And User prefer to click the jean size</a>
-<div class="">
-<span class="badge badge-default">We can orderToBuy a product by using a limeRoad ecommerce web application.User wants to buy a jean.And User prefer to click the jean size</span>
 </div>
 </td>
 </tr>
@@ -589,13 +366,13 @@ Session ID: 5e30dac2e81c66d4f0621a215f204cf2
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 2, 2023 10:03:38 AM</h3>
+<h3>Jun 2, 2023 11:10:50 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 2, 2023 10:04:45 AM</h3>
+<h3>Jun 2, 2023 11:12:03 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -646,9 +423,9 @@ Session ID: 5e30dac2e81c66d4f0621a215f204cf2
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='60%'><b>3</b> scenarios passed</small></div>
+<div><small data-tooltip='80%'><b>4</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='40%'><b>2</b> scenarios failed,
+<small data-tooltip='20%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -666,10 +443,10 @@ Session ID: 5e30dac2e81c66d4f0621a215f204cf2
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='85%'><b>18</b> steps passed</small></div>
+<div><small data-tooltip='95%'><b>20</b> steps passed</small></div>
 <div>
-<small data-tooltip='9%'><b>2</b> steps failed,
-<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='4%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -685,7 +462,7 @@ Session ID: 5e30dac2e81c66d4f0621a215f204cf2
 </div></div>
 <script>
 var timeline = {
-"We can orderToBuy a product by using a limeRoad ecommerce web application":62.495
+"We can orderToBuy a product by using a limeRoad ecommerce web application":26.133
 };
 </script>
 <div class="row">
@@ -699,16 +476,16 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 3,
-failChild: 2,
+passChild: 4,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 18,
-failGrandChild: 2,
+passGrandChild: 20,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 1,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };

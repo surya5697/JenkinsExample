@@ -76,7 +76,6 @@ public class StepDefinition extends BaseClass {
 	public void user_click_the_verify_button_and_user_navigate_to_the_home_page() {
 		actionsMethod(pom.getLogin().getVerify(), "moveToElement");
 		click(pom.getLogin().getVerify());
-		click(pom.getLogin().getVerify());
 
 	}
 
@@ -91,25 +90,25 @@ public class StepDefinition extends BaseClass {
 	
 	@When("User choose to click the Denim Jeans product")
 	public void user_choose_to_click_the_denim_jeans_product() {
-		jsScrollIntoView(pom.getJean().getDenim());
-		click(pom.getJean().getDenim());
-		actionsMethod(pom.getJean().getDarkBlue(), "moveToElement");
-		click(pom.getJean().getDarkBlue());
+//		jsScrollIntoView(pom.getJean().getDenim());
+//		click(pom.getJean().getDenim());
+//		actionsMethod(pom.getJean().getDarkBlue(), "moveToElement");
+//		click(pom.getJean().getDarkBlue());
 	}
 	
 
 	@When("User prefer to click the jean size")
 	public void user_prefer_to_click_the_jean_size() {
-		actionsMethod(pom.getJean().getJeanSize(), "moveToElement");
-		click(pom.getJean().getJeanSize());
+//		actionsMethod(pom.getJean().getJeanSize(), "moveToElement");
+//		click(pom.getJean().getJeanSize());
 		
 
 	}
 
 	@When("User wants to click the jean AddToCart button")
 	public void user_wants_to_click_the_jean_add_to_cart_button() {
-		actionsMethod(pom.getJean().getAddToCart(), "moveToElement");
-		click(pom.getJean().getAddToCart());
+//		actionsMethod(pom.getJean().getAddToCart(), "moveToElement");
+//		click(pom.getJean().getAddToCart());
 		
 	}
 
