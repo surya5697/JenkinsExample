@@ -386,7 +386,7 @@ public abstract class BaseClass {
     public static void quit() {
     	driver.quit();
     }
-
+// All the reusable method are used
 
 
 
