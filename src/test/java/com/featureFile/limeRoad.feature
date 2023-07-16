@@ -33,4 +33,4 @@ When User moveTo click the kids product and navigateTo kids list field
 And User choose to click the Wedding Special Edit product
 And User prefer to click the kid dress size
 And User wants to click the kids product AddToCart button 
-And close thr browser
+And tearDown thr browser 
